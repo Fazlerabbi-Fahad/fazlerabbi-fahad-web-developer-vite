@@ -1,0 +1,218 @@
+.buttonHeader button {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #fff;
+    color: var(--color-white);
+    background: transparent;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+    transition: 0.5s;
+    transition-delay: 0s;
+    color: #fff;
+}
+
+.buttonHeader button:only-child {
+    filter: hue-rotate(100deg);
+}
+
+.buttonHeader button:hover {
+    transition-delay: 1.5s;
+    color: #000;
+    box-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #fff,
+        0 0 80px #fff,
+        0 0 160px #fff,
+        0 0 320px #fff;
+}
+
+.buttonHeader button span {
+    position: relative;
+    z-index: 100;
+}
+
+.buttonHeader button::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    box-shadow: 5px -8px 0 #fff, 5px 8px 0 #fff;
+    transition: width 0.5s, left 0.5s, height .5s,
+        box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+.buttonHeader button:hover::before {
+    width: 60%;
+    height: 110%;
+    left: -2px;
+    box-shadow: 5px 0 0 #fff, 5px 0 0 #fff;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+.buttonHeader button::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    box-shadow: -5px -8px 0 #fff, -5px 8px 0 #fff;
+    transition: width 0.5s, left 0.5s, height .5s,
+        box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+.buttonHeader button:hover::after {
+    width: 60%;
+    height: 110%;
+    right: -2px;
+    box-shadow: -5px 0 0 #fff, -5px 0 0 #fff;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+
+.rectangleWrap{
+    filter: drop-shadow(20px 20px 20px rgba(0,0,0,0.5))
+}
+
+
+  .rectangle {
+    position: relative;
+    width: 300px;
+    height: 380px;
+    overflow: hidden;
+    border: 1 solid rgba(0,0,0,0.5);
+    background: #212428; 
+    clip-path: polygon(0 0, 10% 0, 70% 0, 100% 30%, 100% 90%, 100% 100%, 100% 100%, 0% 100%, 0% 100%);
+  }
+
+  
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .buttonHeader button {
+        position: relative;
+        display: inline-block;
+        padding: 2px 5px;
+        border: 2px solid #fff;
+        margin-right: 10px;
+        margin-left: 10px;
+        text-transform: uppercase;
+        width: 100px;
+        height: 30px;
+        font-size: 8px;
+        font-weight: 100;
+        text-decoration: none;
+        -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+        transition: 0.5s;
+        transition-delay: 0s;
+        color: #fff;
+    }
+
+    .buttonHeader button:checked {
+        transition-delay: 1.5s;
+        color: #fff;
+        box-shadow: 0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 40px #fff,
+            0 0 80px #fff,
+            0 0 160px #fff,
+            0 0 320px #fff;
+    }
+
+    .buttonHeader button span {
+        position: relative;
+        z-index: 100;
+    }
+
+    .buttonHeader button:only-child {
+        filter: hue-rotate(100deg);
+    }
+
+    .buttonHeader button::before {
+        content: "";
+        position: absolute;
+        left: -13px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 2px;
+        background: #fff;
+        box-shadow: 5px -6px 0 #fff, 5px 6px 0 #fff;
+        transition: width 0.5s, left 0.5s, height .5s,
+            box-shadow 0.5s;
+        transition-delay: 1s, 0.5s, 0s, 0s;
+    }
+
+    .buttonHeader button:checked::before {
+        width: 60%;
+        height: 100%;
+        left: -2px;
+        box-shadow: 5px 0 0 #fff, 5px 0 0 #fff;
+        transition-delay: 0s, 0.5s, 1s, 1s;
+    }
+
+    .buttonHeader button::after {
+        content: "";
+        position: absolute;
+        right: -13px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 2px;
+        background: #fff;
+        box-shadow: -5px -6px 0 #fff, -5px 6px 0 #fff;
+        transition: width 0.5s, left 0.5s, height .5s,
+            box-shadow 0.5s;
+        transition-delay: 1s, 0.5s, 0s, 0s;
+    }
+
+    .buttonHeader button:checked ::after {
+        width: 60%;
+        height: 100%;
+        right: -2px;
+        box-shadow: -5px 0 0 #fff, -5px 0 0 #fff;
+        transition-delay: 0s, 0.5s, 1s, 1s;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .rectangle {
+        position: relative;
+        width: 150px;
+        height: 200px;
+        overflow: hidden;
+        border: 1 solid rgba(0,0,0,0.5);
+        background: #212428; 
+        clip-path: polygon(0 0, 10% 0, 70% 0, 100% 30%, 100% 90%, 100% 100%, 100% 100%, 0% 100%, 0% 100%);
+      }
+}
+@media only screen and (max-width: 1024px) {
+    .rectangle {
+        position: relative;
+        width: 150px;
+        height: 200px;
+        overflow: hidden;
+        border: 1 solid rgba(0,0,0,0.5);
+        background: #212428; 
+        clip-path: polygon(0 0, 10% 0, 70% 0, 100% 30%, 100% 90%, 100% 100%, 100% 100%, 0% 100%, 0% 100%);
+      }
+}

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Lexend", sans-serif;
+    background-color: #212428;
+  }
+  
+  /* Scroll bar stylings */
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--lightestgrey); 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #750310; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #171A1E; 
+  }
