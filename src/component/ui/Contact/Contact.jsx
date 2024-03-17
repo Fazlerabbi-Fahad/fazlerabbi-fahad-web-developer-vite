@@ -60,7 +60,7 @@ export default function Contact() {
                         Phone:
                       </p>
                       <Link
-                        href="https://api.whatsapp.com/send/?phone=8801729992254"
+                        to="https://api.whatsapp.com/send/?phone=8801729992254"
                         className="text-white text-start  text-sm font-light"
                         target="_blank"
                         data-tooltip-id="my-tooltip-1"
@@ -80,7 +80,7 @@ export default function Contact() {
                         Email:
                       </p>
                       <Link
-                        href="mailto:fazlerabbifahad.54@gmail.com"
+                        to="mailto:fazlerabbifahad.54@gmail.com"
                         target="_blank"
                         className="text-white text-start break-all  text-sm font-light text-wrap"
                         data-tooltip-id="my-tooltip-2"
@@ -118,7 +118,7 @@ export default function Contact() {
                         Website:
                       </p>
                       <Link
-                        href="https://fazlerabbi-fahad.web.app/"
+                        to="https://fazlerabbi-fahad.web.app/"
                         className="text-white text-start text-sm font-light"
                         target="_blank"
                         data-tooltip-id="my-tooltip-4"

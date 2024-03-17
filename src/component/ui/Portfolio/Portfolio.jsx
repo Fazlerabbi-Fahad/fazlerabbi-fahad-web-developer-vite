@@ -8,6 +8,51 @@ import GradientButton from "../../shared/GradientButton";
 const data = [
   {
     id: 1,
+    image: "https://i.ibb.co/sKbbTQH/Fazle-Rabbi-Fahad.png",
+    title: "Fazle Rabbi Fahad - Full-Stack Web Developer",
+    duration: "Feb, 2024 - March, 2024",
+    line1:
+      "1. I have created my website using Vite, Tailwind CSS(DaisyUI), JS-Map-Loader",
+    line2: "2. Its about me, a full website",
+    line3: "3. Anyone can hire me for there website",
+    live: "https://fazlerabbi-fahad.web.app/",
+    client:
+      "https://github.com/Fazlerabbi-Fahad/fazlerabbi-fahad-web-developer-vite",
+    server:
+      "https://github.com/Fazlerabbi-Fahad/fazlerabbi-fahad-web-developer-vite",
+    dataTooltipId: "my-tooltip-1",
+    dataTooltipContent: "Fazle Rabbi Fahad - Full-Stack Web Developer",
+  },
+  {
+    id: 2,
+    image: "https://i.ibb.co/V2jVgpG/Be-Someone-Special.png",
+    title: "Will Be Accepted",
+    duration: "Feb, 2024 - Feb, 2024",
+    line1: "1. I have created my website using Vite, Tailwind CSS",
+    line2: "2. Its just a funny website for valentine day",
+    line3: "3. You can propose your crush with it and no one can reject it",
+    live: "https://willbeaccepted.web.app/",
+    client: "https://github.com/Fazlerabbi-Fahad/willbeaccepted",
+    server: "https://github.com/Fazlerabbi-Fahad/willbeaccepted",
+    dataTooltipId: "my-tooltip-2",
+    dataTooltipContent: "Will Be Accepted",
+  },
+  {
+    id: 3,
+    image: "https://i.ibb.co/NCVvcL8/Todo-List-By-Fahad.png",
+    title: "Todo List",
+    duration: "Nov, 2023 - Dec, 2023",
+    line1: "1. I have created my website using Vite, Tailwind CSS",
+    line2: "2. Its a website to maintain your daily work",
+    line3: "3. You can add your daily day tasks here",
+    live: "https://todolistbyfahad.web.app/",
+    client: "https://github.com/Fazlerabbi-Fahad/todoList",
+    server: "https://github.com/Fazlerabbi-Fahad/todoList",
+    dataTooltipId: "my-tooltip-3",
+    dataTooltipContent: "Todo List",
+  },
+  {
+    id: 4,
     image: "https://i.ibb.co/R93sWPr/Recycle-BIN.png",
     title: "RecycleBIN-A website for selling used furniture",
     duration: "Nov, 2022 - Dec, 2022",
@@ -19,51 +64,8 @@ const data = [
     live: "https://recycle-bin-8fe8b.web.app/",
     client: "https://github.com/Fazlerabbi-Fahad/recycle_bin_client",
     server: "https://github.com/Fazlerabbi-Fahad/recycle_bin_server",
-    dataTooltipId: "my-tooltip-1",
-    dataTooltipContent: "RecycleBIN-A website for selling used furniture",
-  },
-  {
-    id: 2,
-    image: "https://i.ibb.co/R3JQW55/Onnorokom.png",
-    title: "Onnorokom Pathshala-A online learning platform",
-    duration: "Nov, 2022 - Nov, 2022",
-    line1: "1. A responsive, fully-functional online learning website",
-    line2: "2. Allowing learners to create an account,browse classes",
-    line3: "3. Has firebase authentication(Google, Github, and Email)",
-    live: "https://onnorokom-pathsala-d832f.web.app/",
-    client: "https://github.com/Fazlerabbi-Fahad/Onnorokom-Pathsala-Client",
-    server: "https://github.com/Fazlerabbi-Fahad/Onnorokom-Pathsala-Server",
-    dataTooltipId: "my-tooltip-2",
-    dataTooltipContent: "Onnorokom Pathshala-A online learning platform",
-  },
-  {
-    id: 3,
-    image: "https://i.ibb.co/M5tQQkV/PhotoGAL.png",
-    title: "PhotoGAL-A photographer's service selling website",
-    duration: "Nov, 2022 - Nov, 2022",
-    line1: "1. A responsive, fully-functional photographer's website",
-    line2: "2. Allowing see my services and take services",
-    line3: "3. Has firebase authentication(Google, Github, and Email)",
-    live: "https://photogal54.netlify.app/",
-    client: "https://github.com/Fazlerabbi-Fahad/photoGAL-client-side",
-    server: "https://github.com/Fazlerabbi-Fahad/photoGAL-server-side",
-    dataTooltipId: "my-tooltip-3",
-    dataTooltipContent: "PhotoGAL-A photographer's service selling website",
-  },
-  {
-    id: 4,
-    image: "https://i.ibb.co/71z6365/News.png",
-    title: "News 24/7-A website for reading news",
-    duration: "Oct, 2022 - Oct, 2022",
-    line1:
-      "1. I have created my website using HTML, Tailwind CSS(DaisyUI), JavaScript",
-    line2: "2. User can add your daily works and break time",
-    line3: "3. User can read news",
-    live: "https://news-54.netlify.app/",
-    client: "https://github.com/Fazlerabbi-Fahad/news-24-7",
-    server: "https://github.com/Fazlerabbi-Fahad/news-24-7",
     dataTooltipId: "my-tooltip-4",
-    dataTooltipContent: "News 24/7-A website for reading news",
+    dataTooltipContent: "RecycleBIN-A website for selling used furniture",
   },
 ];
 
@@ -106,7 +108,7 @@ export default function Portfolio() {
                 <GradientButton>
                   <div className="flex justify-center">
                     <Link
-                      href={project.live}
+                      to={project.live}
                       className="text-white border-r-2 px-2 border-white"
                       data-tooltip-id="my-tooltip-1"
                       data-tooltip-content="Live Website"
@@ -117,7 +119,7 @@ export default function Portfolio() {
                       </span>
                     </Link>
                     <Link
-                      href={project.client}
+                      to={project.client}
                       className="text-white border-r-2 px-2 border-white"
                       data-tooltip-id="my-tooltip-2"
                       data-tooltip-content="Client Site"
@@ -128,7 +130,7 @@ export default function Portfolio() {
                       </span>
                     </Link>
                     <Link
-                      href={project.server}
+                      to={project.server}
                       className="text-white px-2 border-white"
                       data-tooltip-id="my-tooltip-3"
                       data-tooltip-content="Server Site"
@@ -182,7 +184,7 @@ export default function Portfolio() {
                 <GradientButton>
                   <div className="flex justify-center">
                     <Link
-                      href={project.live}
+                      to={project.live}
                       className="text-white border-r-2 px-2 border-white"
                       data-tooltip-id="my-tooltip-1"
                       data-tooltip-content="Live Website"
@@ -193,7 +195,7 @@ export default function Portfolio() {
                       </span>
                     </Link>
                     <Link
-                      href={project.client}
+                      to={project.client}
                       className="text-white border-r-2 px-2 border-white"
                       data-tooltip-id="my-tooltip-2"
                       data-tooltip-content="Client Site"
@@ -204,7 +206,7 @@ export default function Portfolio() {
                       </span>
                     </Link>
                     <Link
-                      href={project.server}
+                      to={project.server}
                       className="text-white px-2 border-white"
                       data-tooltip-id="my-tooltip-3"
                       data-tooltip-content="Server Site"

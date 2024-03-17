@@ -52,7 +52,7 @@ export default function Banner() {
                       <div className="pr-1">
                         <div className="text-secondary text-xs lg:text-xl py-1">
                           <Link
-                            href="https://www.linkedin.com/in/fazle-rabbi-fahad/"
+                            to="https://www.linkedin.com/in/fazle-rabbi-fahad/"
                             target="_blank"
                             data-tooltip-id="my-tooltip-1"
                             data-tooltip-content="Linkedin"
@@ -62,7 +62,7 @@ export default function Banner() {
                         </div>
                         <div className="text-secondary text-xs lg:text-xl py-1">
                           <Link
-                            href="https://github.com/Fazlerabbi-Fahad"
+                            to="https://github.com/Fazlerabbi-Fahad"
                             target="_blank"
                             data-tooltip-id="my-tooltip-2"
                             data-tooltip-content="GitHub"
@@ -72,7 +72,7 @@ export default function Banner() {
                         </div>
                         <div className="text-secondary text-xs lg:text-xl py-1">
                           <Link
-                            href="https://api.whatsapp.com/send/?phone=8801729992254"
+                            to="https://api.whatsapp.com/send/?phone=8801729992254"
                             target="_blank"
                             data-tooltip-id="my-tooltip-3"
                             data-tooltip-content="Whatsapp"
@@ -82,7 +82,7 @@ export default function Banner() {
                         </div>
                         <div className="text-secondary text-xs  lg:text-xl py-1">
                           <Link
-                            href="https://www.facebook.com/fablerabbi.fahad"
+                            to="https://www.facebook.com/fablerabbi.fahad"
                             target="_blank"
                             data-tooltip-id="my-tooltip-4"
                             data-tooltip-content="Facebook"
@@ -92,7 +92,7 @@ export default function Banner() {
                         </div>
                         <div className="text-secondary text-xs lg:text-xl py-1">
                           <Link
-                            href="https://www.instagram.com/fazlerabbi_fahad/"
+                            to="https://www.instagram.com/fazlerabbi_fahad/"
                             target="_blank"
                             data-tooltip-id="my-tooltip-5"
                             data-tooltip-content="Instagram"

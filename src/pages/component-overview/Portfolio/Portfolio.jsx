@@ -54,7 +54,7 @@ export default function Portfolio() {
                   <GradientButton>
                     <div className="flex justify-center">
                       <Link
-                        href={project.live}
+                        to={project.live}
                         className="text-white border-r-2 px-2 border-white"
                         data-tooltip-id="my-tooltip-1"
                         data-tooltip-content="Live Website"
@@ -65,7 +65,7 @@ export default function Portfolio() {
                         </span>
                       </Link>
                       <Link
-                        href={project.client}
+                        to={project.client}
                         className="text-white border-r-2 px-2 border-white"
                         data-tooltip-id="my-tooltip-2"
                         data-tooltip-content="Client Site"
@@ -76,7 +76,7 @@ export default function Portfolio() {
                         </span>
                       </Link>
                       <Link
-                        href={project.server}
+                        to={project.server}
                         className="text-white px-2 border-white"
                         data-tooltip-id="my-tooltip-3"
                         data-tooltip-content="Server Site"
@@ -140,7 +140,7 @@ export default function Portfolio() {
                   <GradientButton>
                     <div className="flex justify-center">
                       <Link
-                        href={project.live}
+                        to={project.live}
                         className="text-white border-r-2 px-2 border-white"
                         data-tooltip-id="my-tooltip-1"
                         data-tooltip-content="Live Website"
@@ -151,7 +151,7 @@ export default function Portfolio() {
                         </span>
                       </Link>
                       <Link
-                        href={project.client}
+                        to={project.client}
                         className="text-white border-r-2 px-2 border-white"
                         data-tooltip-id="my-tooltip-2"
                         data-tooltip-content="Client Site"
@@ -162,7 +162,7 @@ export default function Portfolio() {
                         </span>
                       </Link>
                       <Link
-                        href={project.server}
+                        to={project.server}
                         className="text-white px-2 border-white"
                         data-tooltip-id="my-tooltip-3"
                         data-tooltip-content="Server Site"
